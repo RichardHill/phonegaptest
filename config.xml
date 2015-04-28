@@ -3,7 +3,7 @@
         id        = "1424762"
         version   = "1.0.0">
 
-    <name>phonebuildtest</name>
+    <name>phonegaptest</name>
 
     <description>
         Phone Gap Test App for testing out ideas....
