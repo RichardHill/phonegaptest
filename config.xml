@@ -3,10 +3,10 @@
         id        = "1424762"
         version   = "1.0.0">
 
-    <name>phonegaptest</name>
+    <name>phonebuildtest</name>
 
     <description>
-        Phone Gap Test App for testing out ideas....
+        PhoneGap Build Test App for testing out ideas....
     </description>
 
     <author href="http://phonegap.com" email="support@phonegap.com">
