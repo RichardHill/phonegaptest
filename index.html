@@ -1,7 +1,53 @@
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Working Google Maps</title>
+    </head>
+    <body>
+        <div id="map"></div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7LyHxYiwKsDFW5W6K-5oMQs0St7BWI2U"> </script>
+        <script type="text/javascript" charset="utf-8">
+
+		// Wait for device API libraries to load
+		    //
+		    document.addEventListener("deviceready", onDeviceReady, false);
+
+		    // device APIs are available
+		    //
+		    function onDeviceReady() {
+
+		    	var mapOptions = {
+		            center: latLong,
+		            zoom: 13,
+		            mapTypeId: google.maps.MapTypeId.ROADMAP
+		        };
+		 
+		        var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+		        
+		    }
+
+        </script>
+    </body>
+</html>
+
+
+<!-- <html>
   <head>
     <title>Device Properties Example</title>
 
+
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script type="text/javascript" src="js/googlemap.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7LyHxYiwKsDFW5W6K-5oMQs0St7BWI2U"> </script>
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8">
 
@@ -27,18 +73,13 @@
 
     </script>
 
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="js/googlemap.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7LyHxYiwKsDFW5W6K-5oMQs0St7BWI2U"> </script>
 
   </head>
   <body>
-    <p id="geolocation">Finding your geolocation...</p>
     <div id="map_canvas"></div>
   </body>
 </html>
-
+ -->
 <!-- Old Code 
 
 <!-- <html>
